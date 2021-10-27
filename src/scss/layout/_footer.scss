@@ -1,0 +1,64 @@
+.footer{
+    background-color: $azul;
+    margin-top: $espacio;
+    padding: 2rem 0;
+}
+.logoFooter{
+    img{width: 8rem; margin-bottom: 2rem;}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .sitioContacto{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        a{margin-bottom: 1.5rem;}
+    }
+    @include desktop{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+.footer-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+}
+.navFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.navFooter-a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    a{padding-bottom: .5rem;}
+    @include desktop{
+        text-align: left;
+    }
+}
+.redesSociales{
+    color: $blanco; 
+    h4{font-size: 2rem;}
+}
+.redSocial-icon:hover{ svg{stroke: $dorado;}}
+.redesSociales-contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{width: 5rem;}
+}

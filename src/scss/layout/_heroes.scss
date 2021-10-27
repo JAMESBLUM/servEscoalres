@@ -1,0 +1,26 @@
+.webp .heroeOficialWeb{background-image: url(../img/unamHeroe.webp);}
+.no-webp .heroeOficialWeb{background-image: url(../img/unamHeroe.jpg);}
+.heroeOficialWeb{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50rem;
+}
+.heroeOficialWeb-contenido{
+    background-color: rgba(0, 0 ,0 , .65);
+    height: 100%;
+    width: 100%;
+    color: $blanco;
+    padding-top: 15rem;
+    h1{font-size: 3rem;}
+    @include desktop{ h1{font-size: 4rem;}}
+}
+//========== heroe ventanilla
+.heroeVentanilla{
+    background-image: url(../img/heroes/ventanillaVirtual.jpg);
+    background-position: center center;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+}

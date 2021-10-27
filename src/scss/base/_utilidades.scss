@@ -1,0 +1,32 @@
+.fijar-body{overflow: hidden;}
+//=============== MODIFICACIONES PARA TEXTO ===============
+.centrarTexto{text-align: center;}
+.textoBlanco{color: $blanco;}
+.textoDorado{color:$dorado;}
+.textoAzul{color:$azul}
+.textoMayus{text-transform: uppercase;}
+.textoBold{font-weight: bold;}
+.here{color: $dorado}
+//====================== botones
+.boton{margin-top: $espacio;}
+.btn-principal{
+    text-transform: uppercase;
+    color: $dorado;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 3.5px solid $dorado;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+.btn-principal:hover{
+    background-color: $dorado;
+    color: $blanco;
+    border: none;
+}
+//============ Box shadow
+.boxShadow:hover{
+    -webkit-box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    1px 1px 9px 0px rgba(50, 50, 50, 1);
+    box-shadow:         1px 1px 9px 0px rgba(50, 50, 50, 1);
+}
+//============== ALINEAR CENTRO DEL HTML

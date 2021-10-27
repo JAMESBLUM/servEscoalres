@@ -1,0 +1,40 @@
+.calendarioTramites{padding-bottom: $espacio;}
+.calendarioTramites-contenido{
+    padding-top: $espacio;
+    @include tablet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.calendario{background-image: url(../img/calProcesosTramites/calendarioAnual.jpg);}
+.procesos{background-image: url(../img/calProcesosTramites/tramites1.jpg);}
+.tramites{ background-image: url(../img/calProcesosTramites/admision.jpg);}
+
+.calendario, .procesos, .tramites{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 12rem;
+    margin-bottom: 2rem;
+    @include tablet{
+        width: 100%; 
+        height: 20rem;
+        margin-left: 2rem;
+        &:first-child{margin-left: 0;}
+    }
+    @include desktop{
+        height: 35rem;
+    }
+}
+
+.calendario-contenido, .procesos-contenido, .tramites-contenido{
+    background-color: rgba(0, 0, 0, .7);
+    height: 100%;
+    color: $blanco;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    &:hover{background-color: rgba(205, 164, 52, .8); color: $azul;}
+}

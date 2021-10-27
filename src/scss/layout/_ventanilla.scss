@@ -1,0 +1,8 @@
+.ventanilla-contenido{
+    color: $blanco;
+    height: 100%;
+    padding-top: $espacio * 2.2;
+    h2{font-size: 3rem;}
+    @include tablet{h2{font-size: 4rem;} padding-top: $espacio * 2.5;}
+    background-color: rgba(0, 0, 0, .6);
+}

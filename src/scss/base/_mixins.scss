@@ -1,0 +1,21 @@
+@mixin phone {
+    @media(min-width: $cellphone){
+        @content;
+    }
+}
+@mixin tablet{
+    @media(min-width: $tablet){
+        @content;
+    }
+}
+@mixin desktop{
+    @media(min-width: $desktop){
+        @content;
+    }
+}
+//================ Grid ================
+@mixin grid($columnas, $espacio){
+    display: grid;
+   grid-template-columns: $columnas;
+    gap:$espacio;
+}

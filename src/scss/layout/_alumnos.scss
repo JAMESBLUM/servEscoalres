@@ -1,0 +1,102 @@
+.packReinscripcion {
+    padding-top: $espacio;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.packReinscripcion-elemento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23rem; height: 26rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: $azul;
+    h4,svg, p{color: $blanco; stroke: $blanco;}
+    -webkit-box-shadow: 4px 2px 8px 0px rgba(86, 65, 9, 0.75);
+    -moz-box-shadow:    4px 2px 8px 0px rgba(86, 65, 9, 0.75);
+    box-shadow:         4px 2px 8px 0px rgba(86, 65, 9, 0.75);
+}
+.packReinscripcion-elemento:hover{
+    background-color: $dorado;
+    h4,svg, p{color: $azul; stroke: $azul;}
+    -webkit-box-shadow: 4px 2px 8px 0px rgba(14, 48, 86, 0.75);
+    -moz-box-shadow:    4px 2px 8px 0px rgba(14, 48, 86, 0.75);
+    box-shadow:         4px 2px 8px 0px rgba(14, 48, 86, 0.75);
+}
+//=========================================== CALENDARIO Y MANUAL USUARIO
+.calendarioManual{
+    padding-top: $espacio;
+    display: flex;
+    flex-direction: column;
+    @include tablet{flex-direction: row;}
+}
+.calendarioActividades{
+    background-image: url(../img/heroes/calendario.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 40rem;
+}
+.manualUsuario{
+    background-image: url(../img/heroes/tramites2.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 40rem;
+    margin-top: 2rem;
+    @include tablet{
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+}
+.calendarioManual-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $blanco;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0 ,0, .7);
+}
+//========================= EXAMEN PROFESIONAL
+.examenProfesional{
+    padding-top: $espacio;
+    @include desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.examenProfesionalImg{
+    background-image: url(../img/heroes/examen.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 30rem;
+    @include desktop{width: 90rem;}
+}
+
+.examenProfesional-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $azul;
+    width: 90%;
+    height: 20rem;
+    margin: -12rem auto 0 auto;
+    border-radius: 1rem;
+    h4{font-size: 2.5rem; color: $blanco;}
+    @include desktop{
+        margin: 0 0 0 -25rem;
+        width: 50rem;
+    }
+ 
+}

@@ -1,0 +1,59 @@
+.bg-formValidacion{
+    background-image: url(../img/heroes/bg-form.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 35rem;
+}
+.validacion{
+    margin-top: $espacio;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.validacionForm{
+    background-color: $blanco;
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    margin-top: -10rem;
+    border-radius: 1rem;
+    @include tablet{padding: 2rem 10rem;}
+}
+.campo{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    input{
+        background-color: $azul;
+        border: none;
+        color: $dorado;
+        border-radius: .5rem;
+        text-align: center;
+        padding: .3rem;
+    }
+    label{padding-bottom: 1rem;}
+    span{font-size: 1.5rem; padding-top: .5rem; color: $azul;}
+}
+.btn-Submit{
+    background-color: $blanco;
+    border: .4rem solid $dorado;
+    color: $dorado;
+    border-radius: 1rem;
+    padding: .8rem 3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-Submit:hover{
+    background-color: $dorado;
+    color: $blanco;
+}
