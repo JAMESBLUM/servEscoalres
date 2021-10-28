@@ -1,0 +1,55 @@
+.heroeCertificacionTitulacion{
+    background-image: url(../img/heroes/titulacion.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;;
+    margin-bottom: $espacio;
+}
+.heroeCetificacionTitulacion-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    color: $blanco;
+    height: 100%;
+    @include desktop{h4{font-size: 4rem;}}
+}
+
+.tramitesCertificacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include tablet{
+        flex-direction: row;
+    }
+}
+.tramite{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23rem; height: 26rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: $azul;
+    h4,svg, p{color: $blanco; stroke: $blanco;}
+    -webkit-box-shadow: 4px 2px 8px 0px rgba(86, 65, 9, 0.75);
+    -moz-box-shadow:    4px 2px 8px 0px rgba(86, 65, 9, 0.75);
+    box-shadow:         4px 2px 8px 0px rgba(86, 65, 9, 0.75);
+    @include tablet{
+        margin-right: $espacio;
+        margin-bottom: 0;
+    }
+}
+
+.tramite:hover{
+    background-color: $dorado;
+    h4,svg, p{color: $azul; stroke: $azul;}
+    -webkit-box-shadow: 4px 2px 8px 0px rgba(14, 48, 86, 0.75);
+    -moz-box-shadow:    4px 2px 8px 0px rgba(14, 48, 86, 0.75);
+    box-shadow:         4px 2px 8px 0px rgba(14, 48, 86, 0.75);
+}

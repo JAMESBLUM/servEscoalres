@@ -67,7 +67,7 @@
 }
 //========================= EXAMEN PROFESIONAL
 .examenProfesional{
-    padding-top: $espacio;
+    padding: $espacio 0;
     @include desktop{
         display: flex;
         justify-content: center;
