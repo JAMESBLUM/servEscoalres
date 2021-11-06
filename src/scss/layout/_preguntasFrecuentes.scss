@@ -1,0 +1,29 @@
+.preguntasFrecuentes{
+    padding-top: $espacio;
+    h1{font-size: 3.5rem;}
+    @include tablet{h1{font-size: 4.5rem;}}
+}
+.pregunta{
+    text-align: center;
+    @include tablet{text-align: left;}
+    padding: 2rem 0;
+    label{
+        cursor: pointer; 
+        font-weight: bold; 
+        font-size: 2.5rem; 
+    }
+    input{display: none;}
+    h4{font-size: 2.5rem; color: $dorado;}
+    p{margin: 0;}
+}
+.parteRespuesta{
+    margin-top: 1rem;
+    a{color: $dorado;}
+}
+.pregunta1, .pregunta2, .pregunta3,.pregunta4,.pregunta5,.pregunta6{display: none; text-align: left;}
+#pregunta1:checked ~ .pregunta1{display: initial;}
+#pregunta2:checked ~ .pregunta2{display: initial;}
+#pregunta3:checked ~ .pregunta3{display: initial;}
+#pregunta4:checked ~ .pregunta4{display: initial;}
+#pregunta5:checked ~ .pregunta5{display: initial;}
+#pregunta6:checked ~ .pregunta6{display: initial;}
